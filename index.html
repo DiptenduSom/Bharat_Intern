@@ -1,232 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Diptendu Som - Personal Portfolio</title>
-   <link rel="stylesheet" href="style.css">
-   <script src="https://kit.fontawesome.com/7fa04cdff5.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkySense</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<div id="header">
-   <div class="container">
-      <nav> 
-         <img src="images/logo.png" class="logo">
-         <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
-         </ul>
-         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-      </nav>
-      <div class="header-text">
-         <p>Digital Symphony Code Crafter</p>
-         <h1>Hi, I'm <span>Diptendu Som</span><br>from Kolkata</h1>
-      </div>
-   </div>
-</div>
-<!--------------about---------------->
-<div id="about">
-   <div class="container">
-      <div class="row">
-         <div class="about-col-1">
-            <img src="images/photo4.jpg">
-         </div>
-         <div class="about-col-2">
-            <h1 class="sub-title">About me</h1>
-            <p>
-               "Hello, I'm a dedicated code enthusiast with a strong foundation in programming,
-               competitive coding, and computer science. My expertise extends to digital marketing,
-               web development, and AI/ML. Fueled by a passion for critical thinking and problem-solving,
-               I'm well-versed in Full Stack development. Beyond the digital realm, I have a keen interest
-               in finances and enjoy exploring the intricacies of melody devices. I bring a holistic approach
-               to technology, blending technical prowess with creative problem-solving skills."
-            </p>
+<body>
 
-            <div class="tab-titles">
-               <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-               <p class="tab-links" onclick="opentab('experience')">Experience</p>
-               <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-            <div class="tab-contents active-tab" id="skills">
-               <ul>
-                  <li><span>Code Artisan</span><br>Programming Enthusiast</li>
-                  <li><span>Digital Marketing</span><br>Ads and Analytics & Assets Monetization</li>
-                  <li><span>Problem Solving</span><br>Critical Thinking & Competative Coding</li>
-               </ul>
-            </div>
-            <div class="tab-contents" id="experience">
-               <ul>
-                  <li><span>Full Stack Ecommerce website</span><br>Front End - HTML, CSS, Javascript, Bootstrap.
-                   Backend - Python. Database Management - MySQL</li>
-                  <li><span>Chat-Bot</span><br>Python and JSON</li>
-                  <li><span>Data Structures & Algorithms</span><br>All of the functions that could be expressed
-                   by the means of Linked List</li>
-                  <li><span>Bank Asset Management</span><br>System to manage the accounts in a bank using 'C' language</li>
-                  <li><span>Digital Advertising & Analytics (2020 - 2022)</span><br>Google certified in Digital Marketing, Google Ads & Analytics</li>
-                  <li><span>Challenge Programming (2022 - Current)</span><br>Robust Track record of problem solving in Hackerrank & LeetCode</li>
-               </ul>
-            </div>
-            <div class="tab-contents" id="education">
-               <ul>
-                  <li><span>Kalinga Institute of Industrial Technology (KIIT)</span><br>Grade - 3.4/4 GPA</li>
-                  <li><span>St.Stephen's School</span><br>Grade - 3.2/4 GPA</li>
-                  <li><span>The Assembly of God Church School</span><br>Grade - 3.6/4 GPA</li>
-               </ul>
-            </div>
-         </div>
+<div class="card">
+  <div class="search">
+    <input type="text" placeholder="Enter city name" 
+      spellcheck="false">
+    <button><img src="images/search.png"></button>
+  </div>
+  <div class="error">
+    <p>Invalid city name</p>
+  </div>
+  <div class="weather">
+    <img src="images/rain.png" class="weather-icon">
+    <h1 class="temp">22°C</h1>
+    <h2 class="city">New York</h2>
+    <div class="details">
+      <div class="col">
+        <img src="images/humidity.png">
+        <div>
+          <p class="humidity">50%</p>
+          <p>Humidity</p>
+        </div>
       </div>
-   </div>
-</div>
-<!--------------services----------------->
-<div id="services">
-   <div class="container">
-      <h1 class="sub-title">My Services</h1>
-      <div class="services-list">
-         <div>
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Developer</h2>
-            <p>Web Development creates and maintains websites for apps.Front end uses HTML, CSS,
-               Javascript;Backend uses Python, Django, Java.The database is maintained by MySQL.
-            </p>
-            <a href="#">Learn more</a>
-         </div>
-         <div>
-            <i class="fa-solid fa-chart-line"></i>
-            <h2>Digital Advertising and Analyst</h2>
-            <p>Digital Advertising is targeting audience and analytics involve tools to analyse campaigns
-               track data and user behavior.It optimizes marketing stratergies translating data into actionable
-               reomendations.
-            </p>
-            <a href="#">Learn more</a>
-         </div>
-         <div>
-            <i class="fa-solid fa-code-compare"></i>
-            <h2>Algorithmic Problem Solving</h2>
-            <p>Competative programming is a fast-paced mental sport as it hones problem-solving skills across
-               diverse topics such as data structures & algorithms and various other domains wihch is crucial
-               for refining skills.
-            </p>
-            <a href="#">Learn more</a>
-         </div>
+      <div class="col">
+        <img src="images/wind.png">
+        <div> 
+          <p class="wind">15 km/h</p>
+          <p>Wind Speed</p>
+        </div>
       </div>
-   </div>
-</div>
-<!-----------portfolio------------------->
-<div id="portfolio">
-   <div class="container">
-      <h1 class="sub-title">My Interest</h1>
-      <div class="work-list">
-         <div class="work">
-            <img src="images/work1.jpg">
-            <div class="layer">
-               <h3>Digital Codex</h3>
-               <p>A digital library of code snippets that I have curated serving as a testament
-                  to innovation an the devise range of projects I've created.
-               </p>
-               <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-         </div>
-         <div class="work">
-            <img src="images/work2.png">
-            <div class="layer">
-               <h3>Digital Marketing Dynamics</h3>
-               <p>Mastering Digital Marketing Dynamics : Navigating the fluid landscape of evolving
-                  trends, platforms and statergies for impactful amplification.
-               </p>
-               <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-         </div>
-         <div class="work">
-            <img src="images/work3.jpg">
-            <div class="layer">
-               <h3>Syntax Sorcerer</h3>
-               <p>Navigating algorithmic challenges with precision, leveraging strategic thinking and
-                  swift coding prowess to be consistent in dynamic coding.
-               </p>
-               <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
-            </div>
-         </div>
-      </div>
-      <a href="https://www.linkedin.com/in/diptendusom" class="btn">See More</a>
-   </div>
-</div>
-<!------------contact---------------------->
-<div id="contact">
-   <div class="container">
-      <div class="row">
-         <div class="contact-left">
-            <h1 class="sub-title">Contact Me</h1>
-            <p><i class="fa-solid fa-envelope-open-text"></i> diptendusom112@gmail.com</p>
-            <p><i class="fa-solid fa-mobile-screen"></i> 8276989307</p>
-            <div class="social-icons">
-               <a href="https://instagram.com/ds._piku?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram"></i></a>
-               <a href="https://www.linkedin.com/in/diptendusom"><i class="fa-brands fa-linkedin"></i></a>
-               <a href="https://github.com/DiptenduSom"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <a href="images/Thank You.pdf" download class="btn btn2">Download</a>
-         </div>
-         <div class="contact-right">
-            <form name="submit-to-google-sheet">
-               <input type="text" name="Name" placeholder="Your Name" required>
-               <input type="email" name="Email" placeholder="Your Email" required>
-               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-               <button type="submit" class="btn btn2">Submit</button>
-            </form>
-            <span id="msg"></span>
-         </div>
-      </div>
-   </div>
-   <div class="copyright">
-      <p>All rights reserved © Diptendu <i class="fa-solid fa-fan"></i> 2023</p>
-   </div>
+    </div>
+  </div>
 </div>
 
 <script>
-   var tablinks = document.getElementsByClassName("tab-links");
-   var tabcontents = document.getElementsByClassName("tab-contents");
 
-   function opentab(tabname){
-      for(tablink of tablinks){
-         tablink.classList.remove("active-link");
-      }
-      for(tabcontent of tabcontents){
-         tabcontent.classList.remove("active-tab");
-      }
-      event.currentTarget.classList.add("active-link");
-      document.getElementById(tabname).classList.add("active-tab");
-   }
-</script>
-<script>
-   var sidemenu = document.getElementById("sidemenu");
+const APIKey = "965c2bb3b3fab2bef46d69e1601d6e1a";
+const APIUrl = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
 
-   function openmenu(){
-      sidemenu.style.right = "0";
-   }
-   function closemenu(){
-      sidemenu.style.right = "-200px";
-   }
-</script>
-<script>
-   const scriptURL = 'https://script.google.com/macros/s/AKfycbzQtMp1jVg1oOYicabK3nlXygRTAaIKtPf2KH-x589eYVn9hbh4SzbEQ70VlfYq262V/exec'
-   const form = document.forms['submit-to-google-sheet']
-   const msg = document.getElementById("msg")
- 
-   form.addEventListener('submit', e => {
-     e.preventDefault()
-     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-       .then(response => {
-         msg.innerHTML = "Response Submitted Sucessfully"
-         setTimeout(function(){
-            msg.innerHTML = ""
-         },5000)
-         form.reset()
-       })
-       .catch(error => console.error('Error!', error.message))
-   })
+const searchBox = document.querySelector(".search input");
+const searchBtn = document.querySelector(".search button");
+const weatherIcon = document.querySelector(".weather-icon");
+
+async function checkWeather(city){
+  const response = await fetch(APIUrl + city + `&appid=${APIKey}`);
+  if(!response.status == 404 ) {
+    document.querySelector(".error").style.display = "block";
+    document.querySelector(".weather").style.display = "none";
+  }
+  else{
+    var data = await response.json();
+
+    document.querySelector(".city").innerHTML = data.name;
+    document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
+    document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
+    document.querySelector(".wind").innerHTML = data.wind.speed + " km/h";
+  
+    if(data.weather[0].main == "Clouds"){
+      weatherIcon.src = "images/clouds.png";
+    }
+    else if(data.weather[0].main == "Clear"){
+      weatherIcon.src = "images/clear.png";
+    }
+    else if(data.weather[0].main == "Rain"){
+      weatherIcon.src = "images/rain.png";
+    }
+    else if(data.weather[0].main == "Drizzle"){
+      weatherIcon.src = "images/drizzle.png";
+    }
+    else if(data.weather[0].main == "Mist"){
+      weatherIcon.src = "images/mist.png";
+    }
+  
+    document.querySelector(".weather").style.display = "block";
+    document.querySelector(".error").style.display = "none";
+  }
+}
+
+searchBtn.addEventListener("click", ()=>{
+  checkWeather(searchBox.value);
+})
 </script>
 
 </body>
